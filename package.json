@@ -1,0 +1,18 @@
+{
+  "name": "Fake-Api",
+  "version": "1.0.0",
+  "description": "Simple json database to deploy to the host of your choice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ninjakodtv, json-server,heroku, node, REST API"
+  ],
+  "author": "Ninjakod TV Mehmet Yılmaz",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  }
+}
