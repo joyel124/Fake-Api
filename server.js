@@ -8,7 +8,10 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 8080;
 
 server.db=router.db;
-server.use(cors());
+server.use(cors({
+    credentials: true,
+    origin: "http://localhost:3000"
+}));
 server.use(auth);
 server.use(middlewares);
 server.use(router);
