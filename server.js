@@ -10,7 +10,7 @@ const port = process.env.PORT || 8080;
 server.db=router.db;
 server.use(cors({
     credentials: true,
-    origin: "http://localhost:3000"
+    origin: "https://gi-plus.vercel.app"
 }));
 server.use(auth);
 server.use(middlewares);
