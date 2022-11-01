@@ -1,5 +1,5 @@
 const data = require("./db.js");
-
+const cors=require("cors");
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
 const server = jsonServer.create();
@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 8080;
 
 server.db=router.db;
-
+server.use(cors());
 server.use(auth);
 server.use(middlewares);
 server.use(router);
